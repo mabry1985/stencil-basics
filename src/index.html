@@ -29,6 +29,7 @@
     </style>
   </head>
   <body>
+    <button id="menu-button">Open Menu</button>
     <jm-side-drawer title="Main Menu">
       <nav class="side-nav">
         <ul>
@@ -38,5 +39,15 @@
         </ul>
       </nav>
     </jm-side-drawer>
+
+    <script>
+      const sideDrawerButton = document.querySelector('#menu-button');
+      const sideDrawer = document.querySelector('jm-side-drawer');
+      sideDrawerButton.addEventListener('click', () => {
+        if (!sideDrawer.open) {
+          sideDrawer.open = true;
+        }
+      })
+    </script>
   </body>
 </html>
