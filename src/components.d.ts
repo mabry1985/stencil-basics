@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface JmSideDrawer {
+        "title": string;
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface JmSideDrawer {
+        "title"?: string;
     }
     interface IntrinsicElements {
         "jm-side-drawer": JmSideDrawer;
