@@ -44,8 +44,8 @@
       const sideDrawerButton = document.querySelector('#menu-button');
       const sideDrawer = document.querySelector('jm-side-drawer');
       sideDrawerButton.addEventListener('click', () => {
-        if (!sideDrawer.open) {
-          sideDrawer.open = true;
+        if (!sideDrawer.opened) {
+          sideDrawer.open();
         }
       })
     </script>
