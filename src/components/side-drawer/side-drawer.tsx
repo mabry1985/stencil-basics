@@ -21,7 +21,7 @@ export class SideDrawer {
           <button onClick={this.onCloseDrawer}>X</button>
         </header>
         <section id="tabs">
-          <button>Navigation</button>
+          <button class="active" >Navigation</button>
           <button>Contact</button>
         </section>
         <main>
