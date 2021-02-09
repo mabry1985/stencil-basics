@@ -7,8 +7,36 @@
 
     <script type="module" src="/build/web-components-stencil.esm.js"></script>
     <script nomodule src="/build/web-components-stencil.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .side-nav ul {
+        list-style: none;
+      }
+
+      .side-nav li {
+        text-decoration: none;
+        margin: 1rem 0;
+      }
+
+      .side-nav a {
+        text-decoration: none;
+        color: #613f00;
+      }
+
+    </style>
   </head>
   <body>
-    <jm-side-drawer title="Main Menu"></jm-side-drawer>
+    <jm-side-drawer title="Main Menu">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">1</a></li>
+          <li><a href="/">2</a></li>
+          <li><a href="/">3</a></li>
+        </ul>
+      </nav>
+    </jm-side-drawer>
   </body>
 </html>
